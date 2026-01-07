@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmhouse Booking</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Escape Farmhouse</h1>
+    <p>Book your farmhouse stay</p>
+
+    <!-- Farmhouse Image -->
+    <img 
+        src="https://media.istockphoto.com/id/879361282/photo/typical-wooden-small-farm-house-in-victorian-style-in-williamstown.jpg?s=612x612&w=0&k=20&c=tMtLuiMyOtRaAucO5SiHJysHAuQtIKyKPtI0sy2izyw="
+        alt="Farmhouse Image"
+        width="600">
+</header>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">Features</a> |
+    <a href="#">Bookings</a> |
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+<section>
+    <h2>Book Now!!!</h2>
+
+    <form 
+        action="https://wa.me/917670836092" 
+        method="get" 
+        target="_blank">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>Full Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" required><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Booking Details</legend>
+            <label>Check-in Date:</label><br>
+            <input type="date" required><br><br>
+
+            <label>Check-out Date:</label><br>
+            <input type="date" required><br><br>
+
+            <label>Number of Guests:</label><br>
+            <input type="number" min="1" max="20" required><br><br>
+
+            <label>Farmhouse Type:</label><br>
+            <select>
+                <option>Luxury</option>
+                <option>Standard</option>
+                <option>Budget</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Requirements</legend>
+            <label><input type="checkbox"> Swimming Pool</label><br>
+            <label><input type="checkbox"> BBQ Area</label><br>
+            <label><input type="checkbox"> Camp Fire</label><br><br>
+
+            <label>Special Requests:</label><br>
+            <textarea rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Clear Form">
+
+    </form>
+    <fieldset>
+    
+    <h2>Our Location</h2>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Hyderabad%20Farmhouse&output=embed"
+        width="50%" 
+        height="300" 
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+    </fieldset>
+
+    <section>
+    <fieldset>
+        <h2><b>Guest Reviews</b></h2>
+
+        <p>
+            <b>⭐ ⭐ ⭐ ⭐ ⭐</b><br>
+            “Amazing place for weekend stay!” – Rahul
+        </p>
+
+        <p>
+            <b>⭐ ⭐ ⭐ ⭐</b><br>
+            “Clean and peaceful environment.” – Sneha
+        </p>
+    </fieldset>
+</section>
+
+<section>
+    <fieldset>
+    <h2>Terms & Conditions</h2>
+    <p>Booking once confirmed cannot be cancelled on weekends.</p>
+    <p>Any damage will be charged separately.</p>
+    </fieldset>
+</section>
+
+
+
+</section>
+</main>
+
+<footer>
+    <p>© Escape Farmhouse | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
