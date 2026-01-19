@@ -1,0 +1,30 @@
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">🏠 Homes</div>
+
+    <div class="search">
+      <input
+        type="text"
+        placeholder="Filter by city"
+        [(ngModel)]="searchCity"
+      />
+      <button>Search</button>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="grid">
+    <div class="card" *ngFor="let home of filteredHomes">
+      <img [src]="home.image" />
+
+      <div class="info">
+        <h3>{{ home.title }}</h3>
+        <p>📍 {{ home.city }}</p>
+        <a href="#">Learn More ></a>
+      </div>
+    </div>
+  </div>
+
+</div>
