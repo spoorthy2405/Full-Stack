@@ -1,0 +1,33 @@
+<div class="form-container">
+  <h2>Add Transaction</h2>
+
+  <form (ngSubmit)="saveTransaction()">
+
+    <label>Property</label>
+    <select [(ngModel)]="transaction.property" name="property" required>
+      <option value="Earthy Escape">Earthy Escape</option>
+      <option value="Millennium Farm House">Millennium Farm House</option>
+    </select>
+
+    <label>Type</label>
+    <select [(ngModel)]="transaction.type" name="type" required>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <label>Category</label>
+    <input type="text" [(ngModel)]="transaction.category" name="category" required />
+
+    <label>Amount</label>
+    <input type="number" [(ngModel)]="transaction.amount" name="amount" required />
+
+    <label>Date</label>
+    <input type="date" [(ngModel)]="transaction.date" name="date" required />
+
+    <label>Description</label>
+    <textarea [(ngModel)]="transaction.description" name="description"></textarea>
+
+    <button type="submit">Save Transaction</button>
+
+  </form>
+</div>

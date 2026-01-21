@@ -1,0 +1,43 @@
+<div class="reports-container">
+  <h2>Financial Reports</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <label>
+      Year:
+      <input type="number" [(ngModel)]="selectedYear" />
+    </label>
+
+    <label>
+      Period:
+      <select [(ngModel)]="selectedPeriod" (change)="generateReport()">
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Yearly">Yearly</option>
+      </select>
+    </label>
+
+    <button (click)="generateReport()">Generate</button>
+  </div>
+
+  <!-- Report Table -->
+  <table *ngIf="reportRows.length > 0">
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Income</th>
+        <th>Expense</th>
+        <th>Profit</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let row of reportRows">
+        <td>{{ row.label }}</td>
+        <td>₹ {{ row.income }}</td>
+        <td>₹ {{ row.expense }}</td>
+        <td>₹ {{ row.profit }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

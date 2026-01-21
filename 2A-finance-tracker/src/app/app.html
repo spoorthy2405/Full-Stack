@@ -1,0 +1,29 @@
+<!-- TOP NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="logo">
+    2A Finance Tracker
+  </div>
+
+  <ul class="nav-links">
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="active">
+        Dashboard
+      </a>
+    </li>
+    <li>
+      <a routerLink="/transactions" routerLinkActive="active">
+        Transactions
+      </a>
+    </li>
+    <li>
+      <a routerLink="/reports" routerLinkActive="active">
+        Reports
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- PAGE CONTENT LOADS HERE -->
+<main class="page-container">
+  <router-outlet></router-outlet>
+</main>
