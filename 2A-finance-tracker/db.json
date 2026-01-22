@@ -54,6 +54,24 @@
       "amount": 0,
       "date": "2025-09-12",
       "description": ""
+    },
+    {
+      "id": "7b74",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 0,
+      "date": "",
+      "description": ""
+    },
+    {
+      "id": "babb",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 800000,
+      "date": "2026-01-22",
+      "description": ""
     }
   ]
 }
