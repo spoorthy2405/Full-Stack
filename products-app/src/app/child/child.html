@@ -1,0 +1,27 @@
+<div class="filter-box">
+  <h3>🔍 Search & Filter Products</h3>
+
+  <!-- Search -->
+  <input 
+    class="search"
+    placeholder="Search product..."
+    (input)="searchText.set($any($event.target).value)" />
+
+  <!-- Category -->
+  <select (change)="category.set($any($event.target).value)">
+    <option value="">All Categories</option>
+    <option value="beauty">Beauty</option>
+    <option value="fragrances">Fragrances</option>
+    <option value="smartphones">Mobiles</option>
+    <option value="laptops">Laptops</option>
+  </select>
+
+  <!-- Price Slider -->
+  <div class="price-box">
+    <label>Min Price: ₹{{minPrice()}}</label>
+    <input type="range" min="0" max="100000" (input)="minPrice.set($any($event.target).value)">
+    
+    <label>Max Price: ₹{{maxPrice()}}</label>
+    <input type="range" min="0" max="100000" (input)="maxPrice.set($any($event.target).value)">
+  </div>
+</div>

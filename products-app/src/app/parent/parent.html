@@ -1,0 +1,15 @@
+<h2 class="title">🛍️ Product Sales Dashboard</h2>
+
+<app-child 
+  [products]="products"
+  (filtered)="onFilterChange($event)">
+</app-child>
+
+<div class="cards">
+  <div class="card" *ngFor="let p of filteredProducts">
+    <h4>{{p.title}}</h4>
+    <p>Category: {{p.category}}</p>
+    <p>Brand: {{p.brand}}</p>
+    <h3>₹{{p.price}}</h3>
+  </div>
+</div>
