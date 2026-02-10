@@ -1,0 +1,16 @@
+{
+  "insurances": [
+    {
+      "id": 1,
+      "policyNumber": "POL1001",
+      "policyHolderName": "Ramesh Kumar",
+      "policyType": "Health",
+      "premiumAmount": 12000,
+      "coverageAmount": 500000,
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
+      "nomineeName": "Suresh Kumar",
+      "status": "Active"
+    }
+  ]
+}

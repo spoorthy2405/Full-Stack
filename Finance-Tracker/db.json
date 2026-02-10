@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "name": "Earthy Escape"
+    },
+    {
+      "id": "2",
+      "name": "Millennium Farm House"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "3141",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "Booking",
+      "amount": 150000,
+      "date": "2025-01-21",
+      "description": ""
+    },
+    {
+      "id": "b522",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 10000,
+      "date": "2026-02-10",
+      "description": ""
+    },
+    {
+      "id": "520b",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 0,
+      "date": "2024-12-05",
+      "description": ""
+    },
+    {
+      "id": "3c69",
+      "property": "Earthy Escape",
+      "type": "expense",
+      "category": "Repair",
+      "amount": 30000,
+      "date": "2026-01-15",
+      "description": "This is for repair prupose"
+    },
+    {
+      "id": "1920",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 0,
+      "date": "2025-09-12",
+      "description": ""
+    },
+    {
+      "id": "7b74",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 0,
+      "date": "",
+      "description": ""
+    },
+    {
+      "id": "babb",
+      "property": "Earthy Escape",
+      "type": "income",
+      "category": "",
+      "amount": 800000,
+      "date": "2026-01-22",
+      "description": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "username": "spoorthy",
+      "password": "12345"
+    },
+    {
+      "id": "0854",
+      "username": "nayani",
+      "password": "23456"
+    }
+  ]
+}

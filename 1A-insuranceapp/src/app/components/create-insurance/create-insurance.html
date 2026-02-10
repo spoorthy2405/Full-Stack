@@ -1,0 +1,13 @@
+<h2>Create Insurance</h2>
+
+<form [formGroup]="insuranceForm" (ngSubmit)="submit()">
+  <input formControlName="policyNumber" placeholder="Policy Number">
+  <input formControlName="policyHolderName" placeholder="Policy Holder Name">
+  <input formControlName="policyType" placeholder="Policy Type">
+  <input type="number" formControlName="premiumAmount" placeholder="Premium">
+  <input type="number" formControlName="coverageAmount" placeholder="Coverage">
+  <input type="date" formControlName="startDate">
+  <input type="date" formControlName="endDate">
+  <input formControlName="nomineeName" placeholder="Nominee Name">
+  <button type="submit">Save</button>
+</form>

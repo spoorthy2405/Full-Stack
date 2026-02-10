@@ -1,0 +1,18 @@
+<h2>Insurance Policies</h2>
+
+<table border="1">
+  <tr>
+    <th>Policy No</th>
+    <th>Holder</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let i of insurances">
+    <td>{{ i.policyNumber }}</td>
+    <td>{{ i.policyHolderName }}</td>
+    <td>
+      <a [routerLink]="['/view', i.id]">View</a> |
+      <a [routerLink]="['/update', i.id]">Edit</a> |
+      <a [routerLink]="['/delete', i.id]">Delete</a>
+    </td>
+  </tr>
+</table>

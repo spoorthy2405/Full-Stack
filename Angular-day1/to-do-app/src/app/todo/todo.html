@@ -1,0 +1,46 @@
+<div class="todo-container">
+
+  <h2>📝 Todo List</h2>
+
+  <!-- Add Todo -->
+  <div class="add-todo">
+    <input
+      type="text"
+      placeholder="Enter new todo"
+      [(ngModel)]="newTodoTitle"
+      (keyup.enter)="addTodo()"
+    />
+    <button (click)="addTodo()">Add</button>
+  </div>
+
+  <!-- Todo List -->
+  <ul>
+    <li *ngFor="let todo of todos()">
+
+      <!-- Toggle -->
+      <input
+        type="checkbox"
+        [checked]="todo.completed"
+        (change)="toggleTodo(todo)"
+      />
+
+      <!-- Title -->
+      <span
+        [class.completed]="todo.completed">
+        {{ todo.title }}
+      </span>
+
+      <!-- Delete -->
+      <button class="delete-btn" (click)="deleteTodo(todo.id)">
+        ❌
+      </button>
+
+    </li>
+  </ul>
+
+  <!-- Empty state -->
+  <p *ngIf="todos().length === 0">
+    No todos yet 🚀
+  </p>
+
+</div>

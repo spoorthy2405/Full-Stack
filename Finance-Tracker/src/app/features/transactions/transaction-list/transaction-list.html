@@ -1,0 +1,47 @@
+<div class="transactions-container">
+  <div class="header">
+    <h2>Transactions</h2>
+    <a routerLink="/transactions/add" class="add-btn">+ Add Transaction</a>
+  </div>
+
+  <div *ngIf="transactions.length > 0; else noData" class="transactions-grid">
+    <div class="transaction-card" *ngFor="let t of transactions">
+      <div class="card-row">
+        <span class="label">Property</span>
+        <span>{{ t.property }}</span>
+      </div>
+
+      <div class="card-row">
+        <span class="label">Type</span>
+        <span class="type" [class.income]="t.type === 'income'"
+              [class.expense]="t.type === 'expense'">
+          {{ t.type }}
+        </span>
+      </div>
+
+      <div class="card-row">
+        <span class="label">Category</span>
+        <span>{{ t.category }}</span>
+      </div>
+
+      <div class="card-row">
+        <span class="label">Amount</span>
+        <span class="amount">₹ {{ t.amount }}</span>
+      </div>
+
+      <div class="card-row">
+        <span class="label">Date</span>
+        <span>{{ t.date }}</span>
+      </div>
+
+      <div class="actions">
+        <button class="edit-btn" (click)="editTransaction(t.id!)">Edit</button>
+        <button class="delete-btn" (click)="deleteTransaction(t.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noData>
+    <p class="no-data">No transactions found.</p>
+  </ng-template>
+</div>
